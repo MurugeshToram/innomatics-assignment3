@@ -1,0 +1,11 @@
+m=int(input())
+a=set(map(int,input().split()))
+n=int(input())
+b=set(map(int,input().split()))
+c=a.union(b)
+d=a.intersection(b)
+e=c.difference(d)
+f=list(e)
+f.sort()
+for i in f:
+    print(i)
